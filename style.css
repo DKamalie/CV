@@ -69,8 +69,15 @@ body {
   font-size: 1rem;
   text-align: center;
   word-spacing: 60px;
-
-
+}
+h3 {
+  text-align: center;
+  line-height: : 2rem;
+  letter-spacing: 1rem;
+}
+h3 p {
+  letter-spacing: 0.5rem;
+  font-size: 0.7rem;
 }
 /* KEYFRAME FOR COVER PAGE CIRCLES ROTATING */
 @keyframes anim-1 {
@@ -340,7 +347,7 @@ body {
 .me {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 300px 300px;
+  grid-template-rows: 460px 300px;
   grid-template-areas:
   "offer"
   "passions";
