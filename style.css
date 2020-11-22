@@ -214,21 +214,14 @@ h3 p {
   }
 }
 
-
-/* COVER PAGE */
-.heading {
-  text-align: center;
-  border-top: 1px double black;
-  margin: 20px;
-}
 /* PROFILE */
 .profile {
 
   display: grid;
-  grid-template-columns: 0.5fr 0.5fr;
-  grid-template-rows: 500px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 300px;
   grid-template-areas:
-  "image personal";
+  "personal";
   margin-top: 40px;
   padding: 60px;
   /* box-shadow: 0 0 13px rgba(238,221,130, 1); */
@@ -236,15 +229,259 @@ h3 p {
   background: #F8F9F1;
   justify-items: center;
   align-items: center;
-  color: black;
+  color: black; 
 }
-.image {
+
+
+/* COVER PAGE */
+.heading {
+  text-align: center;
+  border-top: 1px double black;
+  margin: 20px;
+
+}
+/* ARTIFACTS */
+.art1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 400px;
+  grid-template-areas:
+  "artA artA"
+  "artB artC";
+  justify-items: center;
+  align-items: center;
+  background: white;
+  padding: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  color : black;
+  font-size: 1.3rem;
+}
+.artA {
+  grid-area: artA;
+  text-decoration: underline;
+}
+.artB {
+  grid-area: artB;
+  width: 300px;
+  border: 5px solid black;
+
+}
+.artC {
+  grid-area: artC;
+}
+
+/* Artifact 2 */
+.art2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 500px ;
+  grid-template-areas:
+  'art2A art2A'
+  'art2C art2D';
+  justify-items: center;
+  align-items: center;
+  background: #F8F9F1;
+  padding: 2rem;
+  padding-bottom: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  grid-gap: 1rem;
+  color: black;
+
+}
+.art2A {
+  grid-area: art2A;
+  text-decoration: underline;
+}
+
+.art2C {
+  grid-area: art2C;
+  height: 400px;
+  width: 400px;
+  border: 5px solid black;
+}
+.art2D {
+  grid-area: art2D;
+  margin:  4rem;
+  font-size: 1.3rem;
+}
+
+/* ARTIFACT 3 */
+.art3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 350px 200px;
+  grid-template-areas:
+  'art3A art3A art3A'
+  'art3B art3C art3D'
+  'art3E art3E art3E';
+  align-items: center;
+  justify-items: center;
+  grid-gap: 2rem;
+  padding: 2rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  background: white;
+  color: black;
+
+}
+.art3A {
+  grid-area: art3A;
+  text-decoration: underline;
+}
+.art3B {
+  grid-area: art3B;
+  border: 5px solid black;
+  width: 360px;
+}
+.art3C {
+  grid-area: art3C;
+  border: 5px solid black;
+  width: 360px;
+}
+.art3D {
+  grid-area: art3D;
+  border: 5px solid black;
+  width: 360px;
+}
+.art3E {
+  grid-area: art3E;
+  font-size: 1.3rem;
+}
+/* ARTIFACT 4 */
+.art4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 400px;
+  grid-template-areas:
+  'art4A art4A'
+  'art4B art4C';
+  align-items: center;
+  justify-items: center;
+  padding: 3rem;
+  background: #F8F9F1;
+  color: black;
+  grid-gap: 2rem;
+  font-size: 1.3rem;
+
+}
+.art4A {
+  grid-area: art4A;
+  text-decoration: underline;
+}
+.art4B {
+  grid-area: art4B;
+  width: 300px;
+  border: 5px solid black;
+}
+.art4C {
+  grid-area: art4C;
+}
+
+/* SUBJECTS */
+.sub1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 500px;
+  grid-template-areas:
+  'sub1A sub1B'
+  'sub1A sub1C';
+  align-items: center;
+  justify-items: center;
+  background: white;
+  color: black;
+  padding: 3rem;
+  padding-top: 8rem;
+  padding-bottom: 6rem;
+  font-size: 1.3rem;
+
+}
+.sub1A {
+  grid-area: sub1A;
+  width: 500px;
+  border: black solid 15px;
+
+}
+.sub1B {
+  grid-area: sub1B;
+}
+.sub1C {
+  grid-area: sub1C;
+}
+
+.sub2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 400px;
+  grid-template-areas:
+  'sub2B sub2A'
+  'sub2C sub2A';
+  align-items: center;
+  justify-items: center;
+  background: #F8F9F1;
+  color: black;
+  padding: 3rem;
+  padding-top: 8rem;
+  padding-bottom: 6rem;
+  font-size: 1.3rem;
+
+}
+.sub2A {
+  grid-area: sub2A;
+  height: 500px;
+  width: 500px;
+  border: 15px solid black;
+  border: black solid 15px;
+}
+.sub2B {
+  grid-area: sub2B;
+}
+.sub2C {
+  grid-area: sub2C;
+}
+
+.sub3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px 600px;
+  grid-template-areas:
+  'sub3A sub3B'
+  'sub3A sub3C';
+  align-items: center;
+  justify-items: center;
+  background: white;
+  color: black;
+  padding: 3rem;
+  padding-top: 8rem;
+  padding-bottom: 6rem;
+  font-size: 1.3rem;
+
+
+}
+.sub3A {
+  grid-area: sub3A;
+  height: 500px;
+  width: 500px;
+  border: black solid 15px;
+}
+.sub3B {
+  grid-area: sub3B;
+}
+.sub3C {
+  grid-area: sub3C;
+}
+
+
+
+
+/* .image {
   grid-area: image;
   padding: 0px;
   margin-left: 40px;
   margin-right: 40px;
 
-}
+} */
 .image img {
 
   border-radius: 50%;
@@ -283,106 +520,6 @@ h3 p {
 
   }
 }
-
-/* PROFILE */
-
-/* PROJECTS */
-.projects {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 400px 400px;
-  grid-template-areas:
-  "first-proj"
-  "second-proj";
-  color: black;
-  margin: 100px;
-  padding: 30px;
-  background: white;
-  box-shadow: 0 0 20px rgba(238,221,130, 1)
-
-}
-.first-proj {
-  grid-area: first-proj;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 350px;
-  grid-template-areas:
-  "first-statement first-image";
-  justify-items: center;
-  align-items: center;
-
-}
-.first-statement {
-  grid-area: first-statement;
-  padding: 20px;
-}
-.first-image {
-  grid-area: first-image;
-  padding: 20px;
-  border: 2px black solid;
-  background: black;
-
-}
-.second-proj {
-  grid-area: second-proj;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 350px;
-  grid-template-areas:
-  "second-image second-statement";
-  justify-items: center;
-  align-items: center;
-}
-.second-statement {
-  grid-area: second-statement;
-  padding: 20px;
-}
-.second-image {
-  grid-area: second-image;
-  padding: 20px;
-  border: 2px black solid;
-  background: black;
-}
-
-.me {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 460px 300px;
-  grid-template-areas:
-  "offer"
-  "passions";
-  justify-items: center;
-  align-items: center;
-  text-align: center;
-  background: white;
-  color: black;
-  padding: 0px 100px 0px 100px;
-  animation: color-change 6s  forwards;
-
-}
-.offer {
-  grid-area: offer;
-}
-.offer ul {
-  list-style: none;
-}
-.passions {
-  grid-area: passions;
-}
-@keyframes color-change {
-  0% {
-    background: black;
-    color: white;
-  }
-  100% {
-    background: white;
-    color: black;
-  }
-
-}
-
-
-
 
 
 
@@ -463,6 +600,15 @@ h3 p {
 
 }
 
+
+/* FOOTER */
+
+footer {
+  padding: 3rem;
+  background: black;
+  text-align: center;
+}
+
         /* Media Queries for Top section */
         /* MEDIA QUERIES FOR PROFILE */
 @media (max-width: 850px) {
@@ -486,6 +632,9 @@ h3 p {
   .image img {
     height: 200px;
     width: 200px;
+  }
+  .art1 , .art2, .art2D, .art3, .art4, .sub1, .sub2, .sub3, .sub4 {
+    font-size: 1rem;
   }
 }
 
