@@ -229,7 +229,7 @@ h3 p {
   background: #F8F9F1;
   justify-items: center;
   align-items: center;
-  color: black; 
+  color: black;
 }
 
 
@@ -400,6 +400,7 @@ h3 p {
 .sub1A {
   grid-area: sub1A;
   width: 500px;
+  height: 400px;
   border: black solid 15px;
 
 }
@@ -429,7 +430,7 @@ h3 p {
 }
 .sub2A {
   grid-area: sub2A;
-  height: 500px;
+  height: 400px;
   width: 500px;
   border: 15px solid black;
   border: black solid 15px;
@@ -461,7 +462,7 @@ h3 p {
 }
 .sub3A {
   grid-area: sub3A;
-  height: 500px;
+  height: 400px;
   width: 500px;
   border: black solid 15px;
 }
